@@ -1,0 +1,25 @@
+{
+  "name": "nova-react",
+  "version": "1.0.0",
+  "description": "React bindings for Hypernova(Nova)",
+  "keywords": [
+    "hypernova",
+    "react",
+    "ssr",
+    "universal"
+  ],
+  "main": "lib/index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ara-framework/nova-bindings.git",
+    "directory": "packages/nova-react"
+  },
+  "dependencies": {
+    "hypernova": "^2.5.0",
+    "hypernova-react": "^2.1.0",
+    "nova-helpers": "^1.0.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}

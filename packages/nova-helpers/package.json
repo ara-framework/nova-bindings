@@ -1,0 +1,21 @@
+{
+  "name": "nova-helpers",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "description": "Nova helpers for Ara Framework",
+  "keywords": [
+    "ara",
+    "framework",
+    "helpers",
+    "nova"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ara-framework/nova-bindings.git",
+    "directory": "packages/nova-helpers"
+  },
+  "dependencies": {
+    "hypernova": "^2.5.0"
+  }
+}

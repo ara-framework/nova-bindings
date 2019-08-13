@@ -16,7 +16,7 @@ const mountComponent = (component, node, data) => {
 const renderInPlaceholder = (name, component, id) => {
   const node = findNode(name, id);
   const data = getData(name, id);
-  console.log(node, data);
+
   if (node && data) {
     mountComponent(component, node, data);
   }

@@ -1,6 +1,6 @@
 {
   "name": "nova-vue-bridge",
-  "version": "1.0.1-alpha.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "repository": "https://github.com/ara-framework/nova-bindings.git",
   "author": "Felipe Guizar Diaz",

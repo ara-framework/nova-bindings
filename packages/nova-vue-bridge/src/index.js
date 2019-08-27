@@ -22,7 +22,16 @@ export default {
       default: '',
     },
   },
+  data() {
+    return {
+      innerHTML: this.placeholder,
+    };
+  },
   render: function render(h) {
+    if (this.innerHTML) {
+      return h('div', { domProps: { innerHTML: this.innerHTML } });
+    }
+
     return h(
       'div',
       [
@@ -55,7 +64,7 @@ export default {
   },
   beforeMount() {
     if (this.$el) {
-      this.$el.innerHTML = '';
+      this.innerHTML = this.$el.innerHTML;
     }
   },
   mounted() {

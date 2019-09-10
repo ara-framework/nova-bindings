@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`nova-vue-bridge should emit event when placeholder is mounted 1`] = `
+Object {
+  "id": "uuid",
+  "name": "Example",
+}
+`;
+
+exports[`nova-vue-bridge should emit event when placeholder is updated 1`] = `
+Object {
+  "id": "uuid",
+  "name": "Example",
+}
+`;
+
+exports[`nova-vue-bridge should render placeholder correctly 1`] = `"<div><div data-hypernova-key=\\"Example\\" data-hypernova-id=\\"uuid\\"></div><script type=\\"application/json\\" data-hypernova-key=\\"Example\\" data-hypernova-id=\\"uuid\\"><!--{\\"title\\":\\"Nova Bridge\\"}--></script></div>"`;
+
+exports[`nova-vue-bridge should render placeholder when is updated 1`] = `"<div><div data-hypernova-key=\\"Example\\" data-hypernova-id=\\"uuid\\"></div><script type=\\"application/json\\" data-hypernova-key=\\"Example\\" data-hypernova-id=\\"uuid\\"><!--{\\"title\\":\\"Nova Bridge Updated\\"}--></script></div>"`;

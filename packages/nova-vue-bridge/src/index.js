@@ -62,14 +62,25 @@ export default {
       return `<!--${dataStr}-->`;
     },
   },
+  methods: {
+    emitNovaMount() {
+      const id = this.$el.querySelector('div[data-hypernova-id]').getAttribute('data-hypernova-id');
+      const customEvent = new CustomEvent('NovaMount', { detail: { id, name: this.name } });
+
+      document.dispatchEvent(customEvent);
+    },
+  },
   beforeMount() {
     if (this.$el) {
       this.innerHTML = this.$el.innerHTML;
     }
   },
   mounted() {
-    const id = this.$el.querySelector('div[data-hypernova-id]').getAttribute('data-hypernova-id');
-    const customEvent = new CustomEvent('NovaMount', { detail: { id, name: this.name } });
-    document.dispatchEvent(customEvent);
+    this.emitNovaMount();
+  },
+  updated() {
+    this.$nextTick(() => {
+      this.emitNovaMount();
+    });
   },
 };

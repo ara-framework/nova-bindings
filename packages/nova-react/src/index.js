@@ -1,28 +1,40 @@
-import * as hypernovaReact from 'hypernova-react';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { findNode, getData } from 'nova-helpers';
 
-const mountComponent = (component, node, data) => {
-  const element = React.createElement(component, data);
+export { renderReact, renderReactStatic } from 'hypernova-react';
 
-  if (ReactDOM.hydrate) {
-    ReactDOM.hydrate(element, node);
-  } else {
-    ReactDOM.render(element, node);
+export { load } from 'hypernova';
+
+export const loadById = (name, id) => {
+  const node = findNode(name, id);
+  const data = getData(name, id);
+
+  if (node && data) {
+    return {
+      node,
+      data,
+    };
   }
+
+  return null;
 };
 
-const renderInPlaceholder = (name, component, id) => {
+export const mountComponent = (component, node, data) => {
+  const element = React.createElement(component, data);
+
+  if (node.innerHTML && ReactDOM.hydrate) {
+    ReactDOM.hydrate(element, node);
+  }
+
+  return ReactDOM.render(element, node);
+};
+
+export const renderInPlaceholder = (name, component, id) => {
   const node = findNode(name, id);
   const data = getData(name, id);
 
   if (node && data) {
     mountComponent(component, node, data);
   }
-};
-
-module.exports = {
-  ...hypernovaReact,
-  renderInPlaceholder,
 };

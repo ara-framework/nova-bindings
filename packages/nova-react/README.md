@@ -38,3 +38,15 @@ import Header from './components/Header';
 
 renderInPlaceholder('Header', Header, 'afa6777f-e8bd-4201-ba42-fe56ec0523c3');
 ```
+
+### Mount Component
+
+You can mount the component using the helper `mountComponent`.
+
+- Component: React component to mount.
+- node: HTMLElement where the component is mounted.
+- data: Object with the data necessary to render the component (props).
+
+```js
+mountComponent(Component, node, data)
+```

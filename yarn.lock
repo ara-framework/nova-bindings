@@ -2278,9 +2278,9 @@ babel-plugin-transform-react-remove-prop-types@^0.4.24:
   integrity sha512-eqj0hVcJUR57/Ug2zE1Yswsw4LhuqqHhD+8v120T1cl3kjg76QwtyBrdIk4WVwK+lAhBJVYCd/v+4nc4y+8JsA==
 
 babel-preset-airbnb@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/babel-preset-airbnb/-/babel-preset-airbnb-4.0.1.tgz#25d37ae2b458492f5dcf59ccce8ecbc6d25e0dfe"
-  integrity sha512-f58eIM939PCDG7KlLU+lE7OzLhjMtncMx6/gshaTsJGvViz3l2fmhCNbkb/cHV8Ga5l5lN9UOHKQ5VfD+mRzFg==
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/babel-preset-airbnb/-/babel-preset-airbnb-4.1.0.tgz#914307715c78f96ffe383d6f098548b86d58631f"
+  integrity sha512-j11sDtH9kGl7KvfTABRqc3cI9AzXqA4D5R+DMmFQtbO8f59iEfIw6wJr2Z0AbHDfEFctJ/sJWtpb8ll7sU5azw==
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
     "@babel/plugin-proposal-object-rest-spread" "^7.4.4"

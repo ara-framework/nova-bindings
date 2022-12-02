@@ -3,7 +3,7 @@ import { fromScript } from 'hypernova';
 export const DATA_KEY = 'hypernova-key';
 export const DATA_ID = 'hypernova-id';
 
-const { document } = global;
+const { document } = globalThis;
 
 export const findNode = (name, id) => {
   const key = name.replace(/\W/g, '');
